@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #231E56 ;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+body, input, button {
+  font-family: 'Paytone One', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.decorations {
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(../assets/decorations.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+
+}
+
+.machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 800px;
+  height: 800px;
+  background-image: url(../assets/machine.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.credits-area {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#icons {
+  margin-top: 140px;
+  margin-right: 8px;
+  width: 220px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px -20px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px 20px #fff;
+  }
+}
+
+.multiplier-area {
+  margin-top: 24px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#multiplier-text {
+  font-weight: bold;
+  text-align: right;
+  font-size: 13px;
+  color: #737373;
+}
+
+#multiplier-button {
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #64D8F1;
+  height: 30px;
+  width: 50px;
+  align-self: center;
+  color: #2D7686;
+}
+
+#multiplier-button:hover {
+  transition: 0.5s;
+  background-color: #82E8FF;
+  -webkit-box-shadow: 2px -1px 30px 0px rgba(179,240,255,1);
+  -moz-box-shadow: 2px -1px 30px 0px rgba(179,240,255,1);
+  box-shadow: 2px -1px 30px 0px rgba(179,240,255,1);
+}
+
+#credit-text {
+  color: #2AC305;
+}
+
+#credit {
+  font-size: 20px;
+  color: #20A200;
+}
+
+#lever {
+  background: transparent url(../assets/lever.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: none;
+  border: none;
+  width: 50px;
+  height: 200px;
+
+  position: fixed;
+  left: 50%;
+  bottom: 450px;
+  margin-left: 123px;
+  transform: translate(-50, 0); 
+}
+
+
+
+
